@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses - QML Forex Academy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Courses</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Available Courses</h2>
+    <ul>
+        <li>Beginner Forex Trading</li>
+        <li>Intermediate Strategies</li>
+        <li>Advanced Risk Management</li>
+    </ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
