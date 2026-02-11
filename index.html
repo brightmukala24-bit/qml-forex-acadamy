@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>QML Forex Academy</title>
+<title>QML Forex Academy | Luxury Forex Education in Malawi</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="QML Forex Academy offers luxury Forex education in Malawi. Learn smart money concepts, trading strategies, risk management, and become a disciplined trader.">
+<meta name="keywords" content="Forex, Trading, Education, QML Forex Academy, Malawi, Smart Money Concepts, Courses, Forex Academy">
+<meta name="author" content="QML Forex Academy">
+<meta name="robots" content="index, follow">
+
+<!-- Google Verification -->
+<meta name="google-site-verification" content="E1kSTqvQF1iJWfaJCZJP_hCuVDyOcUmubPt_pehK6yM" />
+
+<!-- Open Graph for Social Sharing -->
+<meta property="og:title" content="QML Forex Academy | Luxury Forex Education in Malawi">
+<meta property="og:description" content="Learn smart money concepts, market structure & elite risk control. Join QML Forex Academy today!">
+<meta property="og:url" content="https://qml-forex-acadamy-mu.vercel.app">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://your-image-link.com/logo.png">
+
+<!-- Favicon -->
+<link rel="icon" href="https://your-image-link.com/favicon.ico" type="image/x-icon">
+
 <style>
+/* --- General Styles --- */
 body {margin:0;font-family:Segoe UI,Arial;background:#0a0614;color:#f5f3ff;}
 header{background:linear-gradient(90deg,#2e026d,#5b21b6);padding:25px;text-align:center;}
 header h1{margin:0;font-size:2.5em;color:#e9d5ff;letter-spacing:2px;}
@@ -21,8 +42,64 @@ section{padding:60px 20px;max-width:1100px;margin:auto;}
 footer{background:#120826;text-align:center;padding:25px;color:#c4b5fd;}
 input,textarea,select{width:100%;padding:12px;margin:10px 0;border-radius:10px;border:none;background:#1e103a;color:white;}
 button{padding:14px 25px;background:linear-gradient(90deg,#a855f7,#ec4899);border:none;border-radius:999px;font-weight:bold;color:white;cursor:pointer;}
-.social{position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:10px;}
-.social a{padding:12px 20px;background:#22c55e;color:black;border-radius:999px;text-decoration:none;font-weight:bold;}
+
+/* --- Social Buttons --- */
+.social {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+.social a {
+  padding: 12px 22px;
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.95rem;
+  box-shadow: 0 0 12px rgba(232, 121, 249, 0.7), 0 0 20px rgba(168, 85, 247, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social a:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 22px rgba(232, 121, 249, 0.9), 0 0 35px rgba(168, 85, 247, 0.8);
+}
+
+/* --- Floating Enroll Button --- */
+.enroll-now {
+  position: fixed;
+  bottom: 25px;
+  left: 20px;
+  background: linear-gradient(90deg,#22c55e,#16a34a);
+  color: white;
+  padding: 14px 28px;
+  font-weight: bold;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(34,197,94,0.7), 0 0 35px rgba(22,163,74,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+.enroll-now:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 30px rgba(34,197,94,0.9), 0 0 45px rgba(22,163,74,0.8);
+}
+
+/* --- Mobile Adjustments --- */
+@media screen and (max-width: 600px) {
+  .social {
+    bottom: 15px;
+    right: 15px;
+    gap: 10px;
+  }
+  .social a { padding: 10px 18px; font-size: 0.9rem; }
+  .enroll-now { bottom: 15px; left: 15px; padding: 12px 22px; font-size: 0.95rem; }
+}
 </style>
 </head>
 <body>
@@ -104,11 +181,14 @@ button{padding:14px 25px;background:linear-gradient(90deg,#a855f7,#ec4899);borde
 </form>
 </section>
 
+<!-- Floating Social Buttons -->
 <div class="social">
 <a href="https://wa.me/265886566900" target="_blank">💬 WhatsApp</a>
 <a href="https://t.me/+qs9KG9redMo5YjE0" target="_blank">📢 Telegram</a>
-
 </div>
+
+<!-- Floating Enroll Now Button -->
+<a href="#payment" class="enroll-now">🚀 Enroll Now</a>
 
 <footer>
 <p>© 2026 QML Forex Academy — All Rights Reserved.</p>
