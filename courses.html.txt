@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Courses - QML Forex Academy</title>
+<title>Courses - QMLTrades Forex Academy</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,10 +22,11 @@
     <ul>
         <li>Beginner Forex Trading</li>
         <li>Intermediate Strategies</li>
-        <li>Advanced Risk Management</li>
+        <li>Advanced Strategies focusing on Sharp Entries pondering  Price Action and Risk Management</li>
     </ul>
 </section>
 
 <script src="script.js"></script>
 </body>
 </html>
+
