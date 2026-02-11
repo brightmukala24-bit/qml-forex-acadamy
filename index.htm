@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QML Forex Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin:0;font-family:Segoe UI,Arial;background:#0a0614;color:#f5f3ff;}
+header{background:linear-gradient(90deg,#2e026d,#5b21b6);padding:25px;text-align:center;}
+header h1{margin:0;font-size:2.5em;color:#e9d5ff;letter-spacing:2px;}
+nav a{margin:0 15px;color:#ddd6fe;text-decoration:none;font-weight:bold;}
+nav a:hover{color:#f5d0fe;}
+section{padding:60px 20px;max-width:1100px;margin:auto;}
+.hero{text-align:center;}
+.hero h2{font-size:2.8em;color:#c084fc;}
+.hero p{font-size:1.2em;color:#e9d5ff;}
+.btn{display:inline-block;margin-top:20px;padding:14px 30px;background:linear-gradient(90deg,#a855f7,#ec4899);color:white;border-radius:999px;text-decoration:none;font-weight:bold;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
+.card{background:#120826;padding:25px;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,0.5);}
+.card h3{color:#f0abfc;}
+footer{background:#120826;text-align:center;padding:25px;color:#c4b5fd;}
+input,textarea,select{width:100%;padding:12px;margin:10px 0;border-radius:10px;border:none;background:#1e103a;color:white;}
+button{padding:14px 25px;background:linear-gradient(90deg,#a855f7,#ec4899);border:none;border-radius:999px;font-weight:bold;color:white;cursor:pointer;}
+.social{position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:10px;}
+.social a{padding:12px 20px;background:#22c55e;color:black;border-radius:999px;text-decoration:none;font-weight:bold;}
+</style>
+</head>
+<body>
+
+<header>
+<h1>QML FOREX ACADEMY</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#login">Student Login</a>
+<a href="#payment">Enroll</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<h2>Trade with Precision. Profit with Confidence.</h2>
+<p>Luxury Forex Education for Serious Traders</p>
+<a class="btn" href="#payment">Join QML Forex Academy</a>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>We train disciplined, professional traders using smart money concepts, market structure & elite risk control.</p>
+</section>
+
+<section id="courses">
+<h2>Our Programs</h2>
+<div class="cards">
+<div class="card"><h3>Beginner Foundation</h3><p>Forex basics, candlesticks, structure & risk control.</p></div>
+<div class="card"><h3>Intermediate Trader</h3><p>Supply & demand, liquidity, SMC.</p></div>
+<div class="card"><h3>Elite Mentorship</h3><p>Live trading, psychology & consistency training.</p></div>
+</div>
+</section>
+
+<section id="testimonials">
+<h2>Student Testimonials</h2>
+<div class="cards">
+<div class="card">"QML changed how I trade forever." – Daniel</div>
+<div class="card">"From losses to consistency!" – Blessings</div>
+<div class="card">"Best Forex Academy in Malawi!" – Kelvin</div>
+</div>
+</section>
+
+<section id="login">
+<h2>Student Login</h2>
+<form onsubmit="alert('Demo: Backend login not connected')">
+<input type="email" placeholder="Email" required>
+<input type="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+</section>
+
+<section id="payment">
+<h2>Enrollment & Payment</h2>
+<p>Pay via Mobile Money / Bank Transfer / Crypto Wallet</p>
+<form onsubmit="alert('Demo: Payment will be verified by admin')">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Email" required>
+<select required>
+<option>Beginner Course</option>
+<option>Intermediate Course</option>
+<option>Elite Mentorship</option>
+</select>
+<input type="text" placeholder="Your Crypto Wallet (BEP-20)">
+<button type="submit">Submit Enrollment</button>
+</form>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form onsubmit="alert('Demo: Message sent')">
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<textarea rows="4" placeholder="Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<div class="social">
+<a href="https://wa.me/265886566900" target="_blank">💬 WhatsApp</a>
+<a href="https://t.me/+qs9KG9redMo5YjE0" target="_blank">📢 Telegram</a>
+
+</div>
+
+<footer>
+<p>© 2026 QML Forex Academy — All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
