@@ -156,20 +156,73 @@ button{padding:14px 25px;background:linear-gradient(90deg,#a855f7,#ec4899);borde
 </section>
 
 <section id="payment">
-<h2>Enrollment & Payment</h2>
-<p>Pay via Mobile Money / Bank Transfer / Crypto Wallet</p>
-<form onsubmit="alert('Demo: Payment will be verified by admin')">
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Email" required>
-<select required>
-<option>Beginner Course</option>
-<option>Intermediate Course</option>
-<option>Elite Mentorship</option>
-</select>
-<input type="text" placeholder="Your Crypto Wallet (BEP-20)">
-<button type="submit">Submit Enrollment</button>
-</form>
+  <h2>Enrollment & Payment</h2>
+  <p><strong>Official Payment Agent:</strong><br>
+  👤 <b>Name:</b> Bright Mukala</p>
+
+  <div class="cards">
+
+    <!-- Mpamba -->
+    <div class="card">
+      <h3>Mpamba (TNM Mobile Money)</h3>
+      <p>
+        📱 <b>Agent Name:</b> Bright Mukala<br>
+        📞 <b>Agent Number:</b>
+        <span id="mpambaNum">0886566900</span>
+        <button onclick="copyText('mpambaNum')" class="copyBtn">📋 Copy</button><br>
+        📝 <b>Reference:</b> Your Full Name + Course Name
+      </p>
+      <a class="btn" href="https://wa.me/265886566900?text=Hello%20QML%20Forex%20Academy%2C%20I%20have%20paid%20via%20Mpamba.%20Here%20is%20my%20proof." target="_blank">
+        Send Proof on WhatsApp
+      </a>
+    </div>
+
+    <!-- USDT TRC20 -->
+    <div class="card">
+      <h3>Crypto (USDT – TRC20)</h3>
+      <p>
+        🔐 <b>Agent Name:</b> Bright Mukala<br>
+        🌐 <b>Network:</b> TRON (TRC20)<br>
+        🧾 <b>Wallet Address:</b><br>
+        <span id="usdtAddr">TGwkT79QQR9NQQr9MPmDntDJb6RXopiMYh</span>
+        <button onclick="copyText('usdtAddr')" class="copyBtn">📋 Copy</button>
+      </p>
+
+      <!-- QR Code -->
+      <img src="usdt-qr.jpeg" alt="USDT TRC20 QR" style="max-width:180px;margin-top:15px;border-radius:12px;">
+
+      <a class="btn" href="https://wa.me/265886566900?text=Hello%20QML%20Forex%20Academy%2C%20I%20have%20paid%20via%20USDT%20(TRC20).%20Here%20is%20my%20transaction%20hash." target="_blank">
+        Send TXID on WhatsApp
+      </a>
+    </div>
+
+  </div>
 </section>
+
+<script>
+function copyText(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert("Copied: " + text);
+}
+</script>
+
+<style>
+.copyBtn {
+  margin-left: 8px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #a855f7;
+  color: white;
+  font-weight: bold;
+}
+.copyBtn:hover {
+  background: #ec4899;
+}
+</style>
+
 
 <section id="contact">
 <h2>Contact Us</h2>
@@ -196,3 +249,4 @@ button{padding:14px 25px;background:linear-gradient(90deg,#a855f7,#ec4899);borde
 
 </body>
 </html>
+
