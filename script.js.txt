@@ -1,4 +1,65 @@
-function myFunction() {
-    alert("Welcome to QMLTrades Forex Academy!");
+async function loadHomeMessage() {
+  const target = document.getElementById('home-message');
+  if (!target) return;
+  const res = await fetch('/api/home');
+  const data = await res.json();
+  target.textContent = data.message;
 }
 
+async function loadCourses() {
+  const list = document.getElementById('courses-list');
+  if (!list) return;
+  const res = await fetch('/api/courses');
+  const data = await res.json();
+  list.innerHTML = data.courses.map((course) => `<li>${course}</li>`).join('');
+}
+
+async function loadPaymentMethods() {
+  const target = document.getElementById('payment-methods');
+  if (!target) return;
+  const res = await fetch('/api/payment-methods');
+  const data = await res.json();
+  target.innerHTML = data.methods
+    .map((method) => `
+      <article class="card">
+        <h3>${method.name}</h3>
+        <p><strong>Agent:</strong> ${method.agent}</p>
+        <p><strong>Account:</strong> <span id="${method.id}">${method.account}</span>
+          <button class="copy-btn" type="button" onclick="copyText('${method.id}')">Copy</button>
+        </p>
+      </article>
+    `)
+    .join('');
+}
+
+function copyText(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert(`Copied: ${text}`);
+}
+
+async function submitPaymentProof(event) {
+  event.preventDefault();
+  const status = document.getElementById('payment-status');
+  const payload = {
+    name: document.getElementById('student-name').value,
+    course: document.getElementById('course-name').value,
+    method: document.getElementById('payment-method').value,
+    reference: document.getElementById('payment-reference').value,
+  };
+
+  const res = await fetch('/api/payments', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  const data = await res.json();
+  status.textContent = data.message;
+  event.target.reset();
+}
+
+window.addEventListener('DOMContentLoaded', async () => {
+  await Promise.all([loadHomeMessage(), loadCourses(), loadPaymentMethods()]);
+  const form = document.getElementById('payment-form');
+  if (form) form.addEventListener('submit', submitPaymentProof);
+});
