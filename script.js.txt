@@ -1,3 +1,10 @@
+
+const defaultCourses = [
+  'Beginner Course Enrollment — $25',
+  'Intermediate Course Program Enrollment — $15',
+  'Advanced Mentorship Class Enrollment — $30',
+];
+
 async function loadHomeMessage() {
   const target = document.getElementById('home-message');
   if (!target) return;
@@ -9,9 +16,16 @@ async function loadHomeMessage() {
 async function loadCourses() {
   const list = document.getElementById('courses-list');
   if (!list) return;
-  const res = await fetch('/api/courses');
-  const data = await res.json();
-  list.innerHTML = data.courses.map((course) => `<li>${course}</li>`).join('');
+
+  try {
+    const res = await fetch('/api/courses');
+    if (!res.ok) throw new Error('Unable to load courses from API.');
+    const data = await res.json();
+    const courses = Array.isArray(data.courses) && data.courses.length ? data.courses : defaultCourses;
+    list.innerHTML = courses.map((course) => `<li>${course}</li>`).join('');
+  } catch (error) {
+    list.innerHTML = defaultCourses.map((course) => `<li>${course}</li>`).join('');
+  }
 }
 
 async function loadPaymentMethods() {
