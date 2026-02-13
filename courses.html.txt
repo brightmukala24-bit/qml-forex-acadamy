@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Courses - QMLTrades Forex Academy</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QML Forex Academy | Courses</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-<header>
-    <h1>Courses</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="courses.html">Courses</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+  <header>
+    <div class="nav-wrap">
+      <h1>QML FOREX ACADEMY</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a class="active" href="/courses">Courses</a>
+        <a href="/payment">Payment</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section>
+  <section>
     <h2>Available Courses</h2>
-    <ul>
-        <li>Beginner Forex Trading</li>
-        <li>Intermediate Strategies</li>
-        <li>Advanced Strategies focusing on Sharp Entries pondering  Price Action and Risk Management</li>
-    </ul>
-</section>
+    <div class="card">
+      <ul id="courses-list"><li>Loading courses...</li></ul>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <footer>© 2026 QMLTrades Forex Academy.</footer>
+  <script src="/script.js"></script>
 </body>
 </html>
-
