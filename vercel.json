@@ -5,11 +5,4 @@
       "destination": "/index.html"
     }
   ]
-}
- "cleanUrls": true,
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/courses", "destination": "/courses.html" },
-    { "source": "/payment", "destination": "/payment.html" },
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/contact", "destination": "/contact.html" }
+
