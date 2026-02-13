@@ -1,27 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses - QMLTrades Forex Academy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Courses</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
 <section>
-  <h2>Available Programs</h2>
-  <div class="courses-container">
-
-    <div class="course-card">
-      <h3>Beginner Forex Program</h3>
-      <p class="price">$25 / MWK 43,750</p>
-      <p>Perfect for new traders who want to build strong foundations in Forex.</p>
-      <a href="/courses/beginner.html" class="btn">View Program</a>
-    </div>
-
-    <div class="course-card">
-      <h3>Intermediate Program</h3>
-      <p class="price">$15 / MWK 26,250</p>
-      <p>For traders who understand basics and want structured strategy development.</p>
-      <a href="/courses/intermediate.html" class="btn">View Program</a>
-    </div>
-
-    <div class="course-card">
-      <h3>Advanced Strategies – Sniper Entries</h3>
-      <p class="price">$30 / MWK 52,500</p>
-      <p>Master precision entries using price action & high-probability setups.</p>
-      <a href="/courses/advanced.html" class="btn">View Program</a>
-    </div>
-
-  </div>
+    <h2>Available Courses</h2>
+    <ul>
+        <li>Beginner Forex Trading</li>
+        <li>Intermediate Strategies</li>
+        <li>Advanced Risk Management</li>
+    </ul>
 </section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
