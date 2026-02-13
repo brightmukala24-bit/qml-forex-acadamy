@@ -22,6 +22,7 @@
 
   <section>
     <h2>Available Courses</h2>
+    <p>Enrollment fees: Beginner <strong>$25</strong>, Intermediate <strong>$15</strong>, Advanced Mentorship <strong>$30</strong>.</p>
     <div class="card">
       <ul id="courses-list"><li>Loading courses...</li></ul>
     </div>
