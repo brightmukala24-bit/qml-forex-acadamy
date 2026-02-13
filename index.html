@@ -3,447 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QMLTrades Forex Academy | Luxury Forex Education in Malawi</title>
-
-  <meta name="description" content="QMLTrades Forex Academy offers luxury Forex education in Malawi. Learn smart money concepts, trading strategies, risk management, and become a disciplined trader." />
-  <meta name="keywords" content="Forex, Trading, Education, QMLTrades Forex Academy, Malawi, Smart Money Concepts, Support and Resistance, Courses, Forex Academy" />
-  <meta name="author" content="QMLTrades Forex Academy" />
-  <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="E1kSTqvQF1iJWfaJCZJP_hCuVDyOcUmubPt_pehK6yM" />
-
-  <meta property="og:title" content="QMLTrades Forex Academy | Luxury Forex Education in Malawi" />
-  <meta property="og:description" content="Learn smart money concepts, market structure & elite risk control. Join QML Forex Academy today!" />
-  <meta property="og:url" content="https://qmltrades-forex-acadamy-mu.vercel.app" />
-  <meta property="og:type" content="website" />
-
-  <style>
-    :root {
-      --bg: #090414;
-      --bg-soft: #160929;
-      --card: #1b0d33;
-      --primary: #a855f7;
-      --primary-2: #c026d3;
-      --accent: #f472b6;
-      --text: #f5f3ff;
-      --muted: #d8b4fe;
-      --green: #22c55e;
-      --green-2: #16a34a;
-      --warning: #facc15;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 10% 10%, rgba(168, 85, 247, 0.22), transparent 38%),
-        radial-gradient(circle at 90% 20%, rgba(192, 38, 211, 0.2), transparent 35%),
-        radial-gradient(circle at 50% 90%, rgba(244, 114, 182, 0.12), transparent 35%),
-        var(--bg);
-      line-height: 1.6;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      backdrop-filter: blur(12px);
-      background: rgba(20, 8, 35, 0.88);
-      border-bottom: 1px solid rgba(216, 180, 254, 0.2);
-      padding: 16px 20px;
-    }
-
-    .nav-wrap {
-      max-width: 1120px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 1.4rem;
-      letter-spacing: 1px;
-      color: #f3e8ff;
-    }
-
-    nav { display: flex; flex-wrap: wrap; gap: 10px; }
-
-    nav a {
-      color: var(--muted);
-      text-decoration: none;
-      font-weight: 600;
-      padding: 8px 10px;
-      border-radius: 999px;
-      transition: 0.25s ease;
-    }
-
-    nav a:hover {
-      background: rgba(168, 85, 247, 0.25);
-      color: #fff;
-    }
-
-    section {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 70px 20px;
-    }
-
-    .hero { text-align: center; padding-top: 88px; }
-
-    .hero h2 {
-      font-size: clamp(2rem, 6vw, 3.4rem);
-      line-height: 1.1;
-      margin-bottom: 16px;
-      color: #f5d0fe;
-      text-shadow: 0 0 30px rgba(192, 38, 211, 0.35);
-    }
-
-    .hero p {
-      color: #e9d5ff;
-      max-width: 650px;
-      margin: 0 auto 24px;
-      font-size: 1.1rem;
-    }
-
-    .badge {
-      display: inline-block;
-      margin-bottom: 20px;
-      background: rgba(168, 85, 247, 0.2);
-      color: #f0abfc;
-      border: 1px solid rgba(216, 180, 254, 0.4);
-      border-radius: 999px;
-      padding: 8px 16px;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 14px 28px;
-      border-radius: 999px;
-      text-decoration: none;
-      color: white;
-      font-weight: 700;
-      border: 0;
-      cursor: pointer;
-      background: linear-gradient(90deg, var(--primary), var(--accent));
-      box-shadow: 0 8px 22px rgba(168, 85, 247, 0.4);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 30px rgba(192, 38, 211, 0.5);
-    }
-
-    .btn-outline {
-      background: transparent;
-      border: 1px solid rgba(216, 180, 254, 0.5);
-      box-shadow: none;
-      color: #f5d0fe;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 22px;
-      margin-top: 22px;
-    }
-
-    .card {
-      background: linear-gradient(160deg, rgba(42, 15, 74, 0.9), rgba(24, 8, 44, 0.92));
-      border: 1px solid rgba(216, 180, 254, 0.18);
-      border-radius: 18px;
-      padding: 24px;
-      box-shadow: 0 12px 25px rgba(4, 2, 10, 0.55);
-    }
-
-    .card h3 { margin-top: 0; color: #f0abfc; }
-
-    .section-title {
-      margin: 0;
-      font-size: clamp(1.6rem, 4vw, 2.2rem);
-      color: #f3e8ff;
-    }
-
-    .muted { color: #e9d5ff; }
-
-    input, textarea {
-      width: 100%;
-      background: var(--bg-soft);
-      color: var(--text);
-      border: 1px solid rgba(216, 180, 254, 0.28);
-      border-radius: 10px;
-      padding: 12px 14px;
-      margin: 8px 0;
-      font: inherit;
-    }
-
-    .copy-btn {
-      margin-left: 8px;
-      border: 1px solid rgba(216, 180, 254, 0.25);
-      background: rgba(168, 85, 247, 0.18);
-      color: white;
-      border-radius: 8px;
-      padding: 4px 8px;
-      cursor: pointer;
-      font-weight: 700;
-    }
-
-    .pill {
-      display: inline-block;
-      border-radius: 999px;
-      padding: 6px 12px;
-      font-size: 0.82rem;
-      font-weight: 700;
-      margin-top: 8px;
-    }
-
-    .pill-locked {
-      color: #fde68a;
-      background: rgba(250, 204, 21, 0.15);
-      border: 1px solid rgba(250, 204, 21, 0.45);
-    }
-
-    .locked-box {
-      border: 1px dashed rgba(250, 204, 21, 0.7);
-      padding: 16px;
-      border-radius: 12px;
-      background: rgba(250, 204, 21, 0.08);
-      margin-top: 12px;
-    }
-
-    .social {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      display: grid;
-      gap: 10px;
-      z-index: 50;
-    }
-
-    .social a {
-      text-decoration: none;
-      color: white;
-      font-weight: 700;
-      padding: 10px 16px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--primary), var(--primary-2));
-      box-shadow: 0 0 18px rgba(168, 85, 247, 0.45);
-      font-size: 0.9rem;
-    }
-
-    .social a.yellow {
-      background: linear-gradient(90deg, #facc15, #eab308);
-      color: #241400;
-      box-shadow: 0 0 18px rgba(250, 204, 21, 0.45);
-    }
-
-    .enroll-now {
-      position: fixed;
-      left: 18px;
-      bottom: 18px;
-      text-decoration: none;
-      color: white;
-      font-weight: 800;
-      padding: 12px 20px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--green), var(--green-2));
-      box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
-      z-index: 50;
-    }
-
-    footer {
-      text-align: center;
-      color: #d8b4fe;
-      border-top: 1px solid rgba(216, 180, 254, 0.14);
-      padding: 28px 20px 45px;
-      background: rgba(17, 7, 31, 0.65);
-      margin-top: 30px;
-    }
-
-    @media (max-width: 650px) {
-      .social, .enroll-now { position: static; margin: 12px 20px 0; }
-      .hero { padding-top: 52px; }
-    }
-  </style>
+  <title>QMLTrades Forex Academy | Home</title>
+  <meta name="description" content="QMLTrades Forex Academy offers premium forex education in Malawi: chart reading, risk management, smart money concepts, and mentorship." />
+  <meta name="keywords" content="QMLTrades, Forex Academy, Malawi, Trading, Courses, Payment, Mentorship" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <header>
     <div class="nav-wrap">
       <h1>QML FOREX ACADEMY</h1>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#courses">Courses</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#payment">Payment</a>
-        <a href="#vip-signals">VIP Signals</a>
-        <a href="#contact">Contact</a>
+        <a class="active" href="/">Home</a>
+        <a href="/courses">Courses</a>
+        <a href="/payment">Payment</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section id="home" class="hero">
-    <span class="badge">Luxury Forex Education in Malawi</span>
-    <h2>Consistency over hype. <br />Trade with skill, not emotions.</h2>
-    <p>Learn price action, smart money concepts, market structure, and disciplined risk management in a premium purple-themed learning experience.</p>
-    <a class="btn" href="#payment">Join QMLTrades Forex Academy</a>
-  </section>
+  <main>
+    <section class="hero">
+      <span class="badge">Luxury Forex Education in Malawi</span>
+      <h2>Trade with discipline, structure, and confidence.</h2>
+      <p id="home-message">Loading academy message...</p>
+      <a class="btn" href="/courses">Explore Courses</a>
+    </section>
 
-  <section id="about">
-    <h2 class="section-title">About Us</h2>
-    <p class="muted">QMLTrades Forex Academy trains disciplined and professional traders using clean technical analysis, SnR key levels, market structure, and elite risk control systems.</p>
-  </section>
+    <section>
+      <h2>Why Join QMLTrades Forex Academy?</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Beginner Friendly</h3>
+          <p>Start from the basics: market structure, candlesticks, and clean chart reading.</p>
+        </article>
+        <article class="card">
+          <h3>Practical Strategies</h3>
+          <p>Learn entries, risk management, and disciplined execution for consistency.</p>
+        </article>
+        <article class="card">
+          <h3>Mentorship Support</h3>
+          <p>Get guided growth with focused lessons and a trader-first learning path.</p>
+        </article>
+      </div>
+    </section>
 
-  <section id="courses">
-    <h2 class="section-title">Our Programs</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>Beginner Foundation</h3>
-        <p>Forex basics, chart-reading, pure technical analysis, and foundational risk management.</p>
-      </article>
-      <article class="card">
-        <h3>Intermediate Trader</h3>
-        <p>Supply and demand, liquidity concepts, advanced SnR execution, and confidence-building drills.</p>
-      </article>
-      <article class="card">
-        <h3>Elite Mentorship</h3>
-        <p>Live market sessions, trading psychology, performance journaling, and consistency coaching.</p>
-      </article>
-    </div>
-  </section>
-
-  <section id="testimonials">
-    <h2 class="section-title">Student Testimonials</h2>
-    <div class="cards">
-      <article class="card">“QMLTrades changed how I trade forever.” – Daniel</article>
-      <article class="card">“From losses to consistency. I now read charts with clarity.” – Blessings</article>
-      <article class="card">“Best Forex Academy in Malawi right now.” – Kelvin</article>
-    </div>
-  </section>
-
-  <section id="payment">
-    <h2 class="section-title">Enrollment & Payment</h2>
-    <p class="muted"><strong>Official Payment Agent:</strong> Bright Mukala</p>
-
-    <div class="cards">
-      <article class="card">
-        <h3>Mpamba (TNM Mobile Money)</h3>
-        <p>
-          👤 <b>Agent Name:</b> Bright Mukala<br />
-          📞 <b>Agent Number:</b> <span id="mpambaNum">0886566900</span>
-          <button class="copy-btn" type="button" onclick="copyText('mpambaNum')">📋 Copy</button><br />
-          📝 <b>Reference:</b> Your Full Name + Course Name
-        </p>
-        <a class="btn" target="_blank" href="https://wa.me/265886566900?text=Hello%20QMLTrades%20Forex%20Academy%2C%20I%20have%20paid%20via%20Mpamba.%20Here%20is%20my%20proof.">Send Proof on WhatsApp</a>
-      </article>
-
-      <article class="card">
-        <h3>Crypto (USDT - TRC20)</h3>
-        <p>
-          🔐 <b>Agent Name:</b> Bright Mukala<br />
-          🌐 <b>Network:</b> TRON (TRC20)<br />
-          🧾 <b>Wallet Address:</b> <span id="usdtAddr">TGwkT79QQR9NQQr9MPmDntDJb6RXopiMYh</span>
-          <button class="copy-btn" type="button" onclick="copyText('usdtAddr')">📋 Copy</button>
-        </p>
-        <img src="usdt-qr.jpeg" alt="USDT TRC20 QR Code" style="max-width:180px;border-radius:12px;display:block;margin:8px 0 14px;" />
-        <a class="btn" target="_blank" href="https://wa.me/265886566900?text=Hello%20QML%20Forex%20Academy%2C%20I%20have%20paid%20via%20USDT%20(TRC20).%20Here%20is%20my%20transaction%20hash.">Send TXID on WhatsApp</a>
-      </article>
-    </div>
-  </section>
-
-  <section id="vip-signals">
-    <h2 class="section-title">VIP WhatsApp Signals (Paid Access)</h2>
-    <p class="muted">To keep the VIP group exclusive, access is locked. After payment is confirmed by admin, you receive your one-time VIP access code.</p>
-
-    <div class="cards">
-      <article class="card">
-        <h3>Step 1: Submit Proof of Payment</h3>
-        <p>Send payment proof to WhatsApp admin first for confirmation.</p>
-        <a class="btn" target="_blank" href="https://wa.me/265886566900?text=Hello%20QMLTrades%2C%20I%20have%20paid%20for%20VIP%20Signals.%20Please%20confirm%20my%20payment%20and%20send%20my%20VIP%20access%20code.">Submit Proof</a>
-      </article>
-
-      <article class="card">
-        <h3>Step 2: Unlock Group Link</h3>
-        <span class="pill pill-locked">🔒 Locked until payment confirmation</span>
-        <div class="locked-box">
-          <label for="vipCode">Enter your VIP access code from admin:</label>
-          <input id="vipCode" type="text" placeholder="Example: QMLVIP-2026" />
-          <button class="btn" type="button" onclick="unlockVipGroup()">Unlock VIP Group</button>
-          <p id="vipMessage" style="margin-top:10px;color:#fde68a;"></p>
-          <a id="vipLink" class="btn btn-outline" href="https://chat.whatsapp.com/Ew4Sz3esAcpFE5agnX0wTx?mode=gi_t" target="_blank" style="display:none;margin-top:12px;">Join VIP WhatsApp Group</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2 class="section-title">Contact QMLTrades Forex Academy</h2>
-    <p class="muted">Have questions about enrollment, mentorship, or payments? Reach us directly.</p>
-    <div class="cards">
-      <article class="card">
-        <h3>Email Support</h3>
-        <p>QmltradesforexAcadamy@gmail.com</p>
-      </article>
-      <article class="card">
-        <h3>Direct Channels</h3>
-        <p>Use Telegram, YouTube, or request VIP verification via WhatsApp.</p>
-      </article>
-    </div>
-  </section>
-
-  <div class="social">
-    <a href="https://t.me/+qs9KG9redMo5YjE0" target="_blank">📢 Telegram</a>
-    <a href="https://youtube.com/@qmltrades?si=kUfHhK8XUuIgfBGr" target="_blank">▶️ YouTube</a>
-    <a class="yellow" href="#vip-signals">🚦 VIP WhatsApp Signals</a>
-  </div>
-
-  <a class="enroll-now" href="#payment">💸 Enroll Now</a>
+    <section>
+      <h2>Quick Actions</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>View Full Course List</h3>
+          <p>See all available learning tracks and what each level covers.</p>
+          <a class="btn" href="/courses">Go to Courses</a>
+        </article>
+        <article class="card">
+          <h3>Make Payment</h3>
+          <p>Open payment methods page and submit proof of payment.</p>
+          <a class="btn" href="/payment">Go to Payment</a>
+        </article>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p><strong>QMLTrades Forex Academy</strong></p>
-    <p>Email: QmltradesforexAcadamy@gmail.com</p>
+    <p>Email: qmltradesforexAcadamy@gmail.com</p>
     <p>© 2026 QMLTrades Forex Academy — All Rights Reserved.</p>
   </footer>
 
-  <script>
-    function copyText(id) {
-      const text = document.getElementById(id).innerText;
-      navigator.clipboard.writeText(text);
-      alert('Copied: ' + text);
-    }
-
-    function unlockVipGroup() {
-      const vipCodeInput = document.getElementById('vipCode').value.trim();
-      const message = document.getElementById('vipMessage');
-      const vipLink = document.getElementById('vipLink');
-
-      if (!vipCodeInput) {
-        message.textContent = 'Please enter your VIP access code.';
-        vipLink.style.display = 'none';
-        return;
-      }
-
-      if (vipCodeInput.toUpperCase() === 'QMLVIP-2026') {
-        message.style.color = '#86efac';
-        message.textContent = 'Payment verified. VIP group unlocked.';
-        vipLink.style.display = 'inline-block';
-      } else {
-        message.style.color = '#fde68a';
-        message.textContent = 'Invalid code. Use the code sent by admin after payment confirmation.';
-        vipLink.style.display = 'none';
-      }
-    }
-  </script>
+  <script src="/script.js"></script>
 </body>
 </html>
