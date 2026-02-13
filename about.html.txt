@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - QMLTrades Forex Academy</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QML Forex Academy | About</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-<header>
-    <h1>About QMLTrades Forex Academy</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="courses.html">Courses</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+  <header>
+    <div class="nav-wrap">
+      <h1>QML FOREX ACADEMY</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/courses">Courses</a>
+        <a href="/payment">Payment</a>
+        <a class="active" href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section>
-    <p>QMLTrades Forex Academy is dedicated to teaching people how to trade Forex effectively with a focus on discipline and strategy.</p>
-</section>
+  <section>
+    <h2>About QMLTrades Forex Academy</h2>
+    <div class="card">
+      <p>We train disciplined and professional traders using clean technical analysis, market structure and elite risk-control systems.</p>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <footer>© 2026 QMLTrades Forex Academy.</footer>
 </body>
 </html>
-
