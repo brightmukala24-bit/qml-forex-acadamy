@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QML Forex Academy | Contact</title>
+  <title>QMLTrades Forex Academy | Contact</title>
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <header>
     <div class="nav-wrap">
-      <h1>QML FOREX ACADEMY</h1>
+      <h1>QMLTrades FOREX ACADEMY</h1>
       <nav>
         <a href="/">Home</a>
         <a href="/courses">Courses</a>
@@ -31,3 +31,4 @@
   <footer>© 2026 QMLTrades Forex Academy.</footer>
 </body>
 </html>
+
