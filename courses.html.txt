@@ -1,34 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QML Forex Academy | Courses</title>
-  <link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-  <header>
-    <div class="nav-wrap">
-      <h1>QML FOREX ACADEMY</h1>
-      <nav>
-        <a href="/">Home</a>
-        <a class="active" href="/courses">Courses</a>
-        <a href="/payment">Payment</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+<section>
+  <h2>Available Programs</h2>
+  <div class="courses-container">
 
-  <section>
-    <h2>Available Courses</h2>
-    <p>Enrollment fees: Beginner <strong>$25</strong>, Intermediate <strong>$15</strong>, Advanced Mentorship <strong>$30</strong>.</p>
-    <div class="card">
-      <ul id="courses-list"><li>Loading courses...</li></ul>
+    <div class="course-card">
+      <h3>Beginner Forex Program</h3>
+      <p class="price">$25 / MWK 43,750</p>
+      <p>Perfect for new traders who want to build strong foundations in Forex.</p>
+      <a href="/courses/beginner.html" class="btn">View Program</a>
     </div>
-  </section>
 
-  <footer>© 2026 QMLTrades Forex Academy.</footer>
-  <script src="/script.js"></script>
-</body>
-</html>
+    <div class="course-card">
+      <h3>Intermediate Program</h3>
+      <p class="price">$15 / MWK 26,250</p>
+      <p>For traders who understand basics and want structured strategy development.</p>
+      <a href="/courses/intermediate.html" class="btn">View Program</a>
+    </div>
+
+    <div class="course-card">
+      <h3>Advanced Strategies – Sniper Entries</h3>
+      <p class="price">$30 / MWK 52,500</p>
+      <p>Master precision entries using price action & high-probability setups.</p>
+      <a href="/courses/advanced.html" class="btn">View Program</a>
+    </div>
+
+  </div>
+</section>
