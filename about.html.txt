@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QMLTrades Forex Academy | About</title>
+  <title>QmlTrades Forex Academy | About</title>
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <header>
     <div class="nav-wrap">
-      <h1>QMLTrades FOREX ACADEMY</h1>
+      <h1>QmlTrades FOREX ACADEMY</h1>
       <nav>
         <a href="/">Home</a>
         <a href="/courses">Courses</a>
@@ -21,7 +21,7 @@
   </header>
 
   <section>
-    <h2>About QMLTrades Forex Academy</h2>
+    <h2>About QmlTrades Forex Academy</h2>
     <div class="card">
       <h3>Master Price Action. Trade With Structure.</h3>
       <p>At QmlTrades Forex Academy, we teach traders how to read the market using Price Action and Support &amp; Resistance — the foundation of professional trading.</p>
@@ -56,4 +56,5 @@
   <footer>© 2026 QMLTrades Forex Academy.</footer>
 </body>
 </html>
+
 
