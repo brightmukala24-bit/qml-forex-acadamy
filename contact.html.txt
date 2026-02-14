@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QMLTrades Forex Academy | Contact</title>
+  <title>QmlTrades Forex Academy | Contact</title>
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <header>
     <div class="nav-wrap">
-      <h1>QMLTrades FOREX ACADEMY</h1>
+      <h1>QmlTrades FOREX ACADEMY</h1>
       <nav>
         <a href="/">Home</a>
         <a href="/courses">Courses</a>
@@ -23,12 +23,13 @@
   <section>
     <h2>Contact</h2>
     <div class="card">
-      <p>Email: qmltradesforexAcadamy@gmail.com</p>
+      <p>Email: QmltradesforexAcadamy@gmail.com</p>
       <p>WhatsApp: +265 886 566 900</p>
     </div>
   </section>
 
-  <footer>© 2026 QMLTrades Forex Academy.</footer>
+  <footer>© 2026 QmlTrades Forex Academy.</footer>
 </body>
 </html>
+
 
